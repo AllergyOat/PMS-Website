@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!-- idk man -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="edit.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anuphan:wght@100..700&display=swap" rel="stylesheet">
+    <title>Project Management System.</title>
+</head>
+<body>
+    <header>
+        <h1>Project Management System</h1>
+        <p class="light">(ระบบบันทึกข้อมูลจัดการโครงการ)</p>
+        <h2 class="headerHome"><a href="index.html"><i class="fa-solid fa-house"></i>หน้าแรก</a></h2>
+        <h2 class="headerEdit"><a href="edit.html"><i class="fa-solid fa-pen-to-square"></i>แก้ไขข้อมูล</a></h2>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html" class="navbar"><i class="fa-solid fa-house"></i><p class="homepage">หน้าแรก</p></a></li>
+            <li><a href="edit.html" class="current navbar"><i class="fa-solid fa-pen-to-square"></i><p>แก้ไขข้อมูลโครงการ</p></a></li>
+        </ul>
+    </nav>
+    
+    <main>
+    <section class="container">
+        <div class="project">
+            <h3 class="projectheader inline">เลือกโครงการที่ต้องการแก้ไข</h3><a href="addproject.html" class="projectheaders"><button class="addproject">เพิ่มโครงการ</button></a>
+        </div>
+    <ul class="responsive-table">
+        <li class="table-header">
+            <div class="col col-1">เลขที่</div>
+            <div class="col col-2">ชื่อโครงการ</div>
+            <div class="col col-3">รายละเอียด</div>
+            <div class="col col-4">ผู้รับผิดชอบ</div>
+            <div class="col col-5">เวลาเริ่มต้น</div>
+            <div class="col col-6">เวลาสิ้นสุด</div>
+            <div class="col col-7"></div>
+            <div class="col col-8"></div>
+        </li>
+            <p id="projectEDIT" class="font"></div>
+    </ul>
+    </section>
+    </main>
+<script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+<script src="https://kit.fontawesome.com/23c0bc001c.js" crossorigin="anonymous"></script>
+<script src="edit.js"></script>
+</body>
+</html>
